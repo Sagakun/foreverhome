@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Навигация панелі */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.div-nav{
+    display: flex; 
+    align-items: center;
+}
+
+/* Логотип стилі */
+
+.logo{
+    height: 24px; 
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+}
+
+#logo2{
+    transition: transform 0.3s ease;
+}
+
+#logo2:hover{
+    transform: scale(1.1);
+}
+
+/* Навигация сілтемелері */
+
+.ul-nav{
+    list-style-type: none; 
+    display: flex; 
+    gap: 20px; 
+    margin: 0; 
+    padding: 0;
+}
+
+.nav-links{
+    text-decoration: none; 
+    color: #333;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links:hover {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50; 
+}
+
+/* Hero-секция стилі */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    background-image: url('img/happydog.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.hero-content {
+    max-width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #333;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.hero-content p {
+    color: #555;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.hero-buttons a:nth-child(2) {
+    background-color: #888;
+}
+
+.animal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+.animal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+}
+
+.animal-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.animal-card p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-logo-img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+}
+
+.footer-contact {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/*donate*/
+
+
+.donation-hero {
+    background-image: url('img/donat.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.donation-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.donation-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.donation-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.donate-button {
+    background-color: #4CAF50;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #45a049;
+}
+
+
+.why-donate {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.why-donate h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.donation-reasons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reason {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reason img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.donation-options {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.donation-options h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.donation-methods {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.method {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/*adopt*/
+
+/* Стили для hero-секции с фоновым изображением */
+.hero-section1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    background-image: url('img/adoptwww.webp');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для заголовков категорий и карточек */
+.animal-category-wrapper {
+    margin-top: 60px;
+}
+
+.animal-category {
+    text-align: left;
+    font-size: 32px;
+    color: #4CAF50;
+    margin-left: 20px;
+}
+
+.animal-cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.animal-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.animal-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.animal-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.animal-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.adopt-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adopt-button:hover {
+    background-color: #45a049;
+}
+
+/* Анимация карточек при наведении */
+.animal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero-секция */
+.contact-hero {
+    background-image: url('img/contact.webp');
+    background-size: cover;
+    background-position: center top;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    font-size: 20px;
+}
+
+/* Секция с контактной информацией */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+
+}
+
+.contact-details {
+    max-width: 300px;
+    margin: 20px;
+}
+
+.contact-heading {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Карта */
+.contact-map {
+    max-width: 600px;
+    margin: 20px;
+}
+
+/* Форма обратной связи */
+.contact-form-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Smartphones (up to 600px) */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .ul-nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .animal-card {
+        width: 100%;
+    }
+
+    .contact-details, .contact-map, .contact-form {
+        width: 100%;
+    }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav {
+        padding: 15px 30px;
+    }
+
+    .ul-nav {
+        gap: 15px;
+    }
+
+    .animal-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .animal-card {
+        width: 45%;
+    }
+
+    .contact-details, .contact-map, .contact-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Larger Tablets and Small Laptops (1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .animal-card {
+        width: 30%;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+}
